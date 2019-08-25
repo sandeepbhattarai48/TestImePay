@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/heading_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:text="Welcome To IME Pay"
+            android:textColor="#EC1E26"
+            android:textSize="25sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Mobile Number"
+                android:inputType="phone"
+                android:backgroundTint="#EC1E26"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_curve"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/heading_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#535151"
+                android:text="For Support :" />
+
+            <TextView
+                android:id="@+id/phone_no"
+                android:layout_toRightOf="@id/heading_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#001899"
+                android:layout_marginLeft="10dp"
+                android:text="@string/contact"
+                android:layout_toEndOf="@id/heading_2"
+                android:layout_marginStart="10dp" />
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EC1E26"
+            android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_powered_by"
+            android:background="#EC1E26"
+            android:text="Powered by"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+
+        <ImageView
+            android:layout_toRightOf="@+id/tv_powered_by"
+            android:src="@mipmap/logo"
+            android:layout_centerHorizontal="true"
+            android:background="#EC1E26"
+            android:padding="5dp"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
